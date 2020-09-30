@@ -1,4 +1,4 @@
-/* colors: #09B387 #C2FFEF #5CFFD3 #C29A8D #FF7247 */
+/* colors: #09B387 #C2FFEF #5CFFD3 #C29A8D #FF7247 #078261 */
 /* || General setup */
 
 html, body {
@@ -73,7 +73,7 @@ body > * {
 }
 
 .main, .header, nav, .article, .aside, .footer, section {
-  background-color: #09B387;
+  background-color: #078261;
   padding: 1%;
 }
 
