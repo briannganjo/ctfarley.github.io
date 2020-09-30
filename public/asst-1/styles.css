@@ -1,26 +1,132 @@
-body {
-    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-    background: #5e0049;
-    color: rgb(163, 84, 153);
-    padding: 50px 0;
-  }
-  
-  .heading {
-    display: flex;
-    justify-content: center;
-  }
+/* || General setup */
 
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #5e0049;
+  color: rgb(163, 84, 153);
+  padding: 50px 0;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+font-family: 'Medula One', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body > * {
+  background-color: red;
+  padding: 1%;
+}
+
+.main, .header, nav, .article, .aside, .footer, section {
+  background-color: rgba(0,255,0,0.5);
+  padding: 1%;
+}
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+
+.header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+
+/* || main layout */
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+/* .main {
+  display: flex;
+}
+
+.article, .section {
+  flex: 4;
+}
+
+.aside {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 2;
+}
+
+.aside a {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.aside img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  margin-top: 10px;
+} */
   
-  .container * {
-    box-sizing: border-box;
-  }
-  
-  .flex-outer,
+  /* .flex-outer,
   .flex-inner {
     list-style-type: none;
     padding: 0px 16px;
@@ -91,17 +197,4 @@ body {
   
   .flex-inner li {
     width: 80px;
-  }
-
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(163, 84, 153);
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(163, 84, 153);
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(163, 84, 153);
-  }
+  } */
