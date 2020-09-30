@@ -18,6 +18,8 @@ body {
   background: #FF7247;
   color: #5CFFD3;
   padding: 50px 0;
+  align-content: center;
+  flex-flow: row wrap;
 }
 
 /* || typography */
@@ -29,7 +31,7 @@ font-family: 'Medula One', cursive;
 
 .jobtitle {
   font-size: large;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .jobdesc {
