@@ -2,14 +2,15 @@
 /* || General setup */
 html {
   font-size: 10px;
-  background-color: #3b07f7;
+  background-color: #f71707;
   color: #e7f707;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #1f08f3;
+  background-color: #2008f3;
+  align-content: center;
 }
 
 /* || typography */
