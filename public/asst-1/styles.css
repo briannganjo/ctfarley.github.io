@@ -11,13 +11,14 @@ html, body {
   padding: 0;
   background-color: #2008f3;
   align-content: center;
+  flex-flow: row wrap;
 }
 
 /* || typography */
 
 .jobtitle{
   font-size: large;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .jobdesc{
@@ -97,7 +98,7 @@ html, body {
   flex: 0 1 auto;
   width: 175px;
   margin-right: auto;
-.main, .header, nav, .article, .aside, .footer, section {
+  .main, .header, nav, .article, .aside, .footer, section {
   background-color: #078261;
   padding: 1%;
 }
