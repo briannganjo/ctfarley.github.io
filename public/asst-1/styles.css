@@ -24,12 +24,12 @@ body {
 
 h1, h2, h3 {
 font-family: 'Medula One', cursive;
-  color: #5CFFD3;
+  color: black;
 }
 
 p, input, li {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #5CFFD3;
+  color: black;
 }
 
 h1 {
@@ -58,7 +58,7 @@ p, li {
 .heading {
   display: flex;
   justify-content: center;
-  color: #09B387;
+  color: #C2FFEF;
 }
 
 .header {
