@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/* colors: #09B387 #C2FFEF #5CFFD3 #C29A8D #FF7247 #078261 */
+>>>>>>> 10762afde496b839f4792072924cec604ee43d76
 /* || General setup */
 html {
   font-size: 10px;
@@ -79,16 +83,32 @@ html, body {
   padding: 15px;
 }
 
+<<<<<<< HEAD
 .header h1{
   font-size: 40px;
   text-align: center;
+=======
+.header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+>>>>>>> 10762afde496b839f4792072924cec604ee43d76
 
 }
 
+<<<<<<< HEAD
 .profile-image{
   flex: 0 1 auto;
   width: 175px;
   margin-right: auto;
+=======
+.main, .header, nav, .article, .aside, .footer, section {
+  background-color: #078261;
+  padding: 1%;
+}
+>>>>>>> 10762afde496b839f4792072924cec604ee43d76
 
 }
 
