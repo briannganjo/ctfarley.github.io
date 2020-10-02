@@ -84,7 +84,7 @@ h3 {
   flex-flow: row wrap;
   padding: 15px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .heading {
@@ -168,10 +168,12 @@ h3 {
 }
 
 .one {
+  flex: 0 1 auto;              /*added this now */
   width: 26%;
 }
 
 .two {
+  flex: 0 2 auto;              /*added this now */
   width: 54%;
   background-color: #C29A8D;
   font-family: 'Medula One', cursive;
@@ -184,8 +186,12 @@ h3 {
   }
 
   .one {
+    display: flex;             /*added this now */
+    flex-direction: row;       /*added this now */
+    flex-wrap: wrap;           /*added this now */
+    align-items: center;       /*added this now */
     flex: 1 0 auto;
     margin-right: 0px;
-    justify-content: center;
+    justify-content: space-evenly;   /*changed to space-evenly from center*/
   }                     
 }
