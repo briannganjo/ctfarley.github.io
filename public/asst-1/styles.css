@@ -22,7 +22,7 @@ body {
 .jobtitle {
   font-family: 'Medula One', cursive;
   color: black;
-  font-size: large;
+  font-size: x-large;
 }
 
 .jobdesc {
@@ -31,7 +31,7 @@ body {
 }
 
 .resp {
-  font-size: medium;
+  font-size: large;
   font-style: normal;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .wrapper{
   display: flex;
-  justify-content: center;
+  align-items: center;        /*changed justify-content to align-items to fix all body div blocks centered*/
   flex-direction: column;
   flex-wrap: wrap;
   font-size: 2rem;   /*extra*/
@@ -93,14 +93,14 @@ body {
 .profile-image {
   flex: 0 1 auto;
   width: 200px;
-  margin-right: auto;
+  /* margin-right: auto; */         /*Removed this so that no weird empty space separating image and <p>*/
   border: solid 1px whitesmoke;
   border-radius: 4px;
 }
 
 .caption{
   font-style: italic;
-  font-size: small;
+  font-size: medium;
   padding: 15px;
   align-items: center;
   background-color: #B99DBD;
@@ -117,6 +117,8 @@ body {
 
 .one {
   flex: 0 1 auto;              /*added this now */
+  width: 220px;
+  margin-right: 15px;
 }
 
 .two {
@@ -124,6 +126,7 @@ body {
   background-color: #B99DBD;
   font-family: 'Medula One', cursive;
   color: black;
+  padding: 15px;
 }
 
 @media screen and (max-width:1000px) {
@@ -138,6 +141,7 @@ body {
     align-items: center;       /*added this now */
     flex: 1 0 auto;
     margin-right: 0px;
+    margin-bottom: 15px;
     justify-content: space-evenly;   /*changed to space-evenly from center*/
   }                     
 }
