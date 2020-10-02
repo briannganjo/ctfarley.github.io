@@ -187,11 +187,5 @@ h3 {
     flex: 1 0 auto;
     margin-right: 0px;
     justify-content: center;
-  }
-
-  .two {                      /*Is this class here necessary? */
-    flex: 1 0 auto;
-    margin-right: 0px;
-    justify-content: center;
-  }                           
+  }                     
 }
