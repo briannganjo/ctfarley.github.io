@@ -1,4 +1,4 @@
-/* colors: #09B387 #C2FFEF #5CFFD3 #C29A8D #FF7247 #078261 */
+/* colors: #e2c9ec #432130 #fdebff #C29A8D #B99DBD */
 /* || General setup */
 
 html, body {
@@ -13,23 +13,16 @@ html {
 body {
   margin: 0 auto;
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #C2FFEF;
-  color: #5CFFD3;
+  background: #e2c9ec;
   flex-flow: row wrap;
 }
 
 /* || typography */
 
-/* h1, h2, h3 {
-font-family: 'Medula One', cursive;
-  color: black;
-} */
-
 .jobtitle {
   font-family: 'Medula One', cursive;
   color: black;
   font-size: large;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .jobdesc {
@@ -42,41 +35,11 @@ font-family: 'Medula One', cursive;
   font-style: normal;
 }
 
-/* p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: black;
-  background: #C2FFEF;
-} */
-
-/* h1 {
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 100;
-  color: #C2FFEF;
-}
-
-h2 {
-  font-size: 5rem;
-  text-align: center;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 2.2rem;
-} */
-
-/* img {
-  background: #C2FFEF;
-} */
-/* p, li {
-  font-size: 1.6rem;
-  line-height: 1.5;
-} */
-
 /* || header layout */
+
 .header {
   width: 100%;
-  background-color: #078261;
+  background-color: #432130;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
@@ -89,25 +52,12 @@ h3 {
 
 .heading {
   display: flex;
-  color: #C2FFEF;
+  color: #fdebff;
   text-transform: uppercase;
   justify-content: center;
   font-size: 40px;
-  text-align: center;
-  flex: 5;
   text-transform: uppercase;
 }
-
-/* body > * {
-  padding: 1%;
-} */
-
-/* h1 {
-  font-size: 40px;
-  text-align: center;
-  flex: 5;
-  text-transform: uppercase;
-} */
 
 .header img {
   display: flex;
@@ -130,11 +80,9 @@ h3 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
   max-width: 960px;
-  margin: 0 auto;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: row;             /*changed row to column */
+  align-items: flex-start;         /*changed flex-start to center*/
   justify-content: space-between;
 }
 
@@ -155,7 +103,7 @@ h3 {
   font-size: small;
   padding: 15px;
   align-items: center;
-  background-color: #C29A8D;
+  background-color: #B99DBD;
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
 }
@@ -169,13 +117,11 @@ h3 {
 
 .one {
   flex: 0 1 auto;              /*added this now */
-  width: 26%;
 }
 
 .two {
   flex: 0 2 auto;              /*added this now */
-  width: 54%;
-  background-color: #C29A8D;
+  background-color: #B99DBD;
   font-family: 'Medula One', cursive;
   color: black;
 }
