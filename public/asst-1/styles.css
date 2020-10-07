@@ -1,4 +1,4 @@
-/* colors: #09B387 #C2FFEF #5CFFD3 #C29A8D #FF7247 #078261 */
+/* colors: #e2c9ec #432130 #fdebff #C29A8D #B99DBD */
 /* || General setup */
 
 html, body {
@@ -13,21 +13,21 @@ html {
 body {
   margin: 0 auto;
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #C2FFEF;
-  color: #5CFFD3;
+  background: #e2c9ec;
   flex-flow: row wrap;
 }
 
 /* || typography */
 
-h1, h2, h3 {
-font-family: 'Medula One', cursive;
-  color: black;
-}
-
 .jobtitle {
+<<<<<<< HEAD
   font-size: large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+=======
+  font-family: 'Medula One', cursive;
+  color: black;
+  font-size: x-large;
+>>>>>>> 33106ac4ae765ffdad0b78b118c9768ed1728263
 }
 
 .jobdesc {
@@ -36,45 +36,15 @@ font-family: 'Medula One', cursive;
 }
 
 .resp {
-  font-size: medium;
+  font-size: large;
   font-style: normal;
 }
 
-p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: black;
-  background: #C2FFEF;
-}
-
-h1 {
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 100;
-  color: #C2FFEF;
-}
-
-h2 {
-  font-size: 5rem;
-  text-align: center;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 2.2rem;
-}
-
-img {
-  background: #C2FFEF;
-}
-p, li {
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
 /* || header layout */
+
 .header {
   width: 100%;
-  background-color: #078261;
+  background-color: #432130;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
@@ -82,49 +52,42 @@ p, li {
   flex-flow: row wrap;
   padding: 15px;
   align-items: center;
+  justify-content: space-around;
 }
 
 .heading {
   display: flex;
-  color: #C2FFEF;
+  color: #fdebff;
   text-transform: uppercase;
   justify-content: center;
-}
-
-body > * {
-  padding: 1%;
-}
-
-h1 {
   font-size: 40px;
-  text-align: center;
-  flex: 5;
   text-transform: uppercase;
 }
 
 .header img {
   display: flex;
   height: 60px;
+  margin-right: 30px;
 }
 
 /* || main layout */
 
 .wrapper{
   display: flex;
-  justify-content: center;
+  align-items: center;        /*changed justify-content to align-items to fix all body div blocks centered*/
   flex-direction: column;
   flex-wrap: wrap;
+  font-size: 2rem;   /*extra*/
+  line-height: 1.5;  /*extra*/
+  padding: 1%;       /*extra*/
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #C29A8D;
-  width: 80%;
   max-width: 960px;
-  margin: 0 auto;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: row;             /*changed row to column */
+  align-items: flex-start;         /*changed flex-start to center*/
   justify-content: space-between;
 }
 
@@ -135,15 +98,19 @@ h1 {
 .profile-image {
   flex: 0 1 auto;
   width: 200px;
-  margin-right: auto;
+  /* margin-right: auto; */         /*Removed this so that no weird empty space separating image and <p>*/
   border: solid 1px whitesmoke;
   border-radius: 4px;
 }
 
 .caption{
   font-style: italic;
+  font-size: medium;
   padding: 15px;
   align-items: center;
+  background-color: #B99DBD;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
 }
 
 .one, .two{
@@ -154,11 +121,17 @@ h1 {
 }
 
 .one {
-  width: 26%;
+  flex: 0 1 auto;              /*added this now */
+  width: 220px;
+  margin-right: 15px;
 }
 
 .two {
-  width: 54%;
+  flex: 0 2 auto;              /*added this now */
+  background-color: #B99DBD;
+  font-family: 'Medula One', cursive;
+  color: black;
+  padding: 15px;
 }
 
 @media screen and (max-width:1000px) {
@@ -167,8 +140,19 @@ h1 {
   }
 
   .one {
+    display: flex;             /*added this now */
+    flex-direction: row;       /*added this now */
+    flex-wrap: wrap;           /*added this now */
+    align-items: center;       /*added this now */
     flex: 1 0 auto;
     margin-right: 0px;
+<<<<<<< HEAD
     justify-content: center;
   }
 } 
+=======
+    margin-bottom: 15px;
+    justify-content: space-evenly;   /*changed to space-evenly from center*/
+  }                     
+}
+>>>>>>> 33106ac4ae765ffdad0b78b118c9768ed1728263
